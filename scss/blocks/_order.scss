@@ -203,3 +203,52 @@
       }
   }
   
+  .form__range {
+    -webkit-appearance: none; /* убираем стандартный стиль Safari/Chrome */
+    width: 100%;
+    height: 6px;
+    background: #ccc;         /* цвет дорожки */
+    border-radius: 5px;
+    outline: none;
+    
+    /* Firefox */
+    &::-moz-range-track {
+      background: #286690;
+      height: 6px;
+      border-radius: 5px;
+    }
+  
+    /* Кружок для Chrome / Safari */
+    &::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      appearance: none;
+      width: 20px;
+      height: 20px;
+      background: #42A9ED;     /* цвет кружка */
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid #286690; 
+      box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    }
+  
+    /* Кружок для Firefox */
+    &::-moz-range-thumb {
+      width: 20px;
+      height: 20px;
+      background: #42A9ED;     /* цвет кружка */
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid white;
+      box-shadow: 0 0 4px rgba(0,0,0,0.2);
+    }
+  
+    /* Кружок для Edge */
+    &::-ms-thumb {
+      width: 20px;
+      height: 20px;
+      background: #42A9ED;
+      border-radius: 50%;
+      cursor: pointer;
+      border: 2px solid white;
+    }
+  }
