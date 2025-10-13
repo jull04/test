@@ -37,7 +37,6 @@
 .hero {
   background-image: url("../images/background.jpg");
   color: #1b1d25;
-  width: 100%;
   text-align: left;
   padding: 120px;
   background-position: center;
@@ -99,7 +98,7 @@
   color: #ffffff;
   text-align: center;
   padding: 80px 120px;
-  background-image: url(../images/bacground-map.png);
+  background-image: url(../images/background-map.png);
 }
 .order__title {
   font-size: 28px;
