@@ -3,6 +3,10 @@
     color: white;
     padding: 20px 120px;
     font-size: 13px;
+
+    @include respond(768px) {
+        padding: 20px;
+      }
   
     &__container {
       display: flex;
@@ -10,7 +14,12 @@
       align-items: center;
       gap: 8px;
   
-      @media (min-width: 768px) {
+      @include respond(768px) {
+        font-size: 12px;
+        text-align: center;
+      }
+  
+      @include respond(1024px) {
         flex-direction: row;
         justify-content: space-between;
       }
@@ -19,6 +28,10 @@
     &__links {
       display: flex;
       gap: 16px;
+
+      @include respond(768px) {
+        display: block;
+      }
 
       &-container {
         display: flex;

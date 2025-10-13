@@ -123,5 +123,69 @@
         width: 370px;
       }
     }
+
+    @include respond(1024px) {
+        padding: 60px 0;
+    
+        &__steps {
+          justify-content: center;
+          gap: 24px;
+    
+          .step {
+            flex: 1 1 45%;
+          }
+        }
+      }
+    
+      @include respond(768px) {
+        padding: 40px 0;
+    
+        &__title {
+          font-size: 24px;
+        }
+    
+        &__steps {
+          flex-direction: column;
+          align-items: center;
+    
+          .step {
+            flex: 1 1 auto;
+            //width: 100%;
+            max-width: 250px;
+          }
+        }
+    
+        .form__row {
+          flex-direction: column;
+          align-items: stretch;
+          //width: 100%;
+    
+          .form__input,
+          .form__select {
+           // width: 100%;
+          }
+    
+          .form__range {
+           // width: 100%;
+          }
+          .form__file {
+            width: 100%;
+           }
+        }
+      }
+    
+      @include respond(480px) {
+        &__title {
+          font-size: 20px;
+        }
+    
+        &__subtitle {
+          font-size: 14px;
+        }
+    
+        .form__submit {
+          width: 50%;
+        }
+      }
   }
   
