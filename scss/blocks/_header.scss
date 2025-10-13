@@ -1,0 +1,43 @@
+.header {
+    position: sticky;
+    top: 0;
+    background-color: $dark;
+    color: $light;
+    padding: 16px 120px;
+    z-index: 10;
+  
+    &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    &__logo {
+      color: $light;
+      font-weight: 700;
+      font-size: 20px;
+      text-decoration: none;
+  
+      span {
+        color: $accent;
+      }
+    }
+  
+    &__nav {
+      display: flex;
+      gap: 24px;
+    }
+  
+    &__link {
+      color: $text;
+      text-decoration: none;
+      font-size: 14px;
+      transition: color 0.3s;
+  
+      &:hover,
+      &--active {
+        color: $primary;
+      }
+    }
+  }
+  

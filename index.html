@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Оформление заказа</title>
+    <link rel="stylesheet" href="dist/style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__container container">
+        <a href="#" class="header__logo">LOREMIPSUM<span>.NET</span></a>
+        <nav class="header__nav">
+          <a href="#" class="header__link">Бизнес</a>
+          <a href="#" class="header__link">О нас</a>
+          <a href="#" class="header__link">Цены</a>
+          <a href="#" class="header__link">Оформить заказ</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero__content container">
+        <h1 class="hero__title">
+          <span class="hero__title--blue">LOREM IPSUM</span> DOLOR SIT AMETCONSECTETUR
+          <span class="hero__title--accent">ADIPISCING</span>
+        </h1>
+        <p class="hero__subtitle">
+          At vero eos et accusamus et iusto odio dignissimos ducimus!
+        </p>
+        <ul class="hero__list">
+          <li>Totam rem aperiam eaque ipsa</li>
+          <li>Sed ut perspiciatis unde omnis iste natus error</li>
+        </ul>
+        <div class="hero__buttons">
+          <button class="button button--primary">ЗАКАЗАТЬ</button>
+          <button class="button button--secondary">ПОДРОБНЕЕ</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order -->
+    <section class="order">
+      <div class="order__container container">
+        <h2 class="order__title">
+          ОФОРМЛЕНИЕ <span class="order__title--blue">ЗАКАЗА</span>
+        </h2>
+        <p class="order__subtitle">
+          Перед заполнением формы ознакомьтесь с нашей схемой работы!
+        </p>
+
+        <div class="order__steps">
+          <div class="step">
+            <i class="step__icon step__icon-search"></i>
+            <p>Lorem ipsum dolor sit amet</p>
+          </div>
+          <div class="step">
+            <i class="step__icon step__icon-percent"></i>
+            <p>Consectetur adipiscing elit</p>
+          </div>
+          <div class="step">
+            <i class="step__icon step__icon-file"></i>
+            <p>Sed do eiusmod tempor</p>
+          </div>
+          <div class="step">
+            <i class="step__icon step__icon-message"></i>
+            <p>Esse cillum dolore</p>
+          </div>
+          <div class="step">
+            <i class="step__icon step__icon-dollar"></i>
+            <p>Excepteur sint occaecat</p>
+          </div>
+        </div>
+
+        <form class="order__form form">
+          <div class="form__row">
+            <select name="system" class="form__select">
+              <option>Выберите тип системы</option>
+              <option>QIWI Wallet</option>
+              <option>Yandex Money</option>
+              <option>WebMoney</option>
+            </select>
+            <input type="email" name="email" placeholder="Ваш e-mail" class="form__input" />
+            <input type="text" name="name" placeholder="Ваше имя" class="form__input" />
+          </div>
+
+          <div class="form__row form__row--file">
+            <div>
+            <div>
+            <label>Sed ut perspiciatis, unde omnis iste natus</label>
+            <div>75%</div>
+            </div>
+            <input type="range" class="form__range" />
+            </div>
+            <label class="form__file">
+              <input type="file" name="file" />
+              <div class="form__file-icon"></div>
+              ПРИКРЕПИТЬ ФАЙЛ
+            </label>
+          </div>
+
+          <button class="button button--primary form__submit">ОТПРАВИТЬ</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="footer__container container">
+        <p>© 2025 LOREMIPSUM.NET. Все права защищены.</p>
+        <div class="footer__links">
+          <div class="footer__links-container"> <div class="footer__links-icon footer__links-icon-qiwi"></div> QIWI wallet</div>
+          <div class="footer__links-container"> <div class="footer__links-icon footer__links-icon-yandex"></div> Yandex Money</div>
+          <div class="footer__links-container"> <div class="footer__links-icon footer__links-icon-web"></div> WebMoney</div>
+          <a href="mailto:info@loremipsum.net"> <div class="footer__links-container"> <div class="footer__links-icon footer__links-icon-mail"> </div>info@loremipsum.net</div></a>
+          <a href="https://vk.com"> <div class="footer__links-container"><div class="footer__links-icon footer__links-icon-vk"></div> Мы вконтакте</div></a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,127 @@
+.order {
+    background: $dark;
+    color: $light;
+    text-align: center;
+    padding: 80px 120px;
+    background-image: url(../images/bacground-map.png);
+  
+    &__title {
+      font-size: 28px;
+      margin-bottom: 12px;
+  
+      &--blue {
+        color: $primary;
+      }
+    }
+  
+    &__subtitle {
+      color: $text;
+      margin-bottom: 40px;
+    }
+  
+    &__steps {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+      gap: 20px;
+  
+      .step {
+        flex: 1 1 120px;
+        color: $text;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+  
+        &__icon {
+          font-size: 28px;
+          display: block;
+          margin-bottom: 8px;
+          width: 100px;
+          height: 100px;
+          background-repeat: no-repeat;
+          background-color: $primary;
+          border: 5px solid #286690;
+          border-radius: 100px;
+        }
+        &__icon-search {
+            background-image: url(../images/search.svg);
+            background-position: center;
+        }
+        &__icon-percent {
+            background-image: url(../images/percent.svg);
+            background-position: center;
+        }
+        &__icon-file {
+            background-image: url(../images/file.svg);
+            background-position: center;
+        }
+        &__icon-message {
+            background-image: url(../images/message.svg);
+            background-position: center;
+        }
+        &__icon-dollar {
+            background-image: url(../images/dollar.svg);
+            background-position: center;
+        }
+    }
+}
+  
+    .form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+  
+      &__row {
+        display: flex;
+        gap: 12px;
+        justify-content: center;
+      }
+  
+      &__input,
+      &__select {
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #555;
+        background: #2a2d35;
+        color: $light;
+        min-width: 220px;
+      }
+  
+      &__file {
+        border: 1px solid $primary;
+        padding: 8px 16px;
+        cursor: pointer;
+        background: white;
+        color: #272733;
+        border-radius: 4px;
+        width: 370px;
+        display: flex;
+        justify-content: center;
+        max-height: 20px;
+  
+        input {
+          display: none;
+        }
+      }
+  
+      &__file-icon {
+        width: 17px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-image: url(../images/file-black.svg);
+        background-position: center;
+        margin-right: 10px;
+      }
+      &__range {
+        width: 100%;
+      }
+  
+      &__submit {
+        margin-top: 16px;
+        width: 370px;
+      }
+    }
+  }
+  
