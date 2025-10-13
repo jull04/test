@@ -51,6 +51,7 @@
     border-radius: 4px;
     font-weight: 500;
     cursor: pointer;
+    width: 183px;
   
     &--primary {
       background: $primary;
@@ -59,7 +60,7 @@
     }
   
     &--secondary {
-      background: transparent;
+      background: #FFFFFF;
       border: 1px solid $primary;
       color: #2A2B30;
       border: 1px solid #6F6D7B;

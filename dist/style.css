@@ -98,6 +98,7 @@
   border-radius: 4px;
   font-weight: 500;
   cursor: pointer;
+  width: 183px;
 }
 .hero .button--primary {
   background: #3E9CDC;
@@ -105,7 +106,7 @@
   border: 1px solid white;
 }
 .hero .button--secondary {
-  background: transparent;
+  background: #FFFFFF;
   border: 1px solid #3E9CDC;
   color: #2A2B30;
   border: 1px solid #6F6D7B;
@@ -229,8 +230,8 @@
   padding: 10px;
   border-radius: 4px;
   border: 1px solid #555;
-  background: rgba(255, 255, 255, 0.8509803922);
-  color: #272733;
+  background: #272733;
+  color: #FFFFFF;
   width: 370px;
 }
 .order .form__file {
