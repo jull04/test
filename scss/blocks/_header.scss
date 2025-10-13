@@ -3,7 +3,7 @@
     top: 0;
     background-color: $dark;
     color: $light;
-    padding: 16px 120px;
+    padding: 25px 120px;
     z-index: 10;
   
     &__container {
@@ -25,14 +25,16 @@
   
     &__nav {
       display: flex;
-      gap: 24px;
+      gap: 60px;
     }
   
     &__link {
       color: $text;
       text-decoration: none;
-      font-size: 14px;
+      font-size: 13px;
       transition: color 0.3s;
+      text-transform: uppercase;
+
   
       &:hover,
       &--active {
