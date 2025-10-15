@@ -1,80 +1,81 @@
 .footer {
-    background: #0f1116;
-    color: white;
-    padding: 20px 120px;
-    font-size: 13px;
+  background: #0f1116;
+  color: white;
+  padding: 20px 120px;
+  font-size: 13px;
+
+  @include respond(768px) {
+    padding: 20px;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
 
     @include respond(768px) {
-        padding: 20px;
-      }
-  
-    &__container {
-      display: flex;
+      font-size: 12px;
+      text-align: center;
+    }
+
+    @include respond(1024px) {
+      flex-direction: row;
       justify-content: space-between;
-      gap: 8px;
-  
-      @include respond(768px) {
-        font-size: 12px;
-        text-align: center;
-      }
-  
-      @include respond(1024px) {
-        flex-direction: row;
-        justify-content: space-between;
-      }
     }
-  
-    &__links {
+  }
+
+  &__title {
+    margin: 0;
+    @include respond(768px) {
+      width: 170px;
+    }
+  }
+
+  &__links {
+    display: flex;
+    gap: 16px;
+
+    @include respond(768px) {
+      display: block;
+    }
+
+    &-container {
       display: flex;
-      gap: 16px;
+      gap: 5px;
+    }
 
-      @include respond(768px) {
-        display: block;
-      }
+    a {
+      color: white;
+      text-decoration: none;
 
-      &-container {
-        display: flex;
-        gap: 5px;
-      }
-      
-  
-      a {
-        color: white;
-        text-decoration: none;
-  
-        
-
-        &:hover {
-          color: $primary;
-        }
+      &:hover {
+        color: $primary;
       }
     }
-      &__links-icon {
-        width: 20px;
-        height: 20px;
-        background-repeat: no-repeat;
+  }
+  &__links-icon {
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+  }
 
-    }
+  &__links-icon-qiwi {
+    background-image: url(../images/qiwi.svg);
+  }
 
-    &__links-icon-qiwi {
-        background-image: url(../images/qiwi.svg);
-    }
+  &__links-icon-yandex {
+    background-image: url(../images/yandex.svg);
+  }
 
-    &__links-icon-yandex {
-        background-image: url(../images/yandex.svg);
-    }
+  &__links-icon-web {
+    background-image: url(../images/web.svg);
+  }
 
-    &__links-icon-web {
-        background-image: url(../images/web.svg);
-    }
-
-    &__links-icon-vk {
-        background-image: url(../images/vk.svg);
-    }  
-    &__links-icon-mail {
-        background-image: url(../images/mail.svg);
-        margin-top: 2px;
-    }  
-
-    }
-  
+  &__links-icon-vk {
+    background-image: url(../images/vk.svg);
+  }
+  &__links-icon-mail {
+    background-image: url(../images/mail.svg);
+    margin-top: 2px;
+  }
+}
