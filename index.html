@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Оформление заказа на LOREMIPSUM.NET — быстро, удобно и безопасно.">
     <title>Оформление заказа</title>
     <link rel="stylesheet" href="dist/style.css" />
   </head>
@@ -31,7 +32,8 @@
     <section class="hero">
       <div class="hero__content container">
         <h1 class="hero__title">
-          <span class="hero__title--blue">LOREM IPSUM</span> DOLOR SIT AMETCONSECTETUR
+          <span class="hero__title--blue">LOREM IPSUM</span> DOLOR SIT
+          AMETCONSECTETUR
           <span class="hero__title--accent">ADIPISCING</span>
         </h1>
         <p class="hero__subtitle">
@@ -42,8 +44,8 @@
           <li>Sed ut perspiciatis unde omnis iste natus error</li>
         </ul>
         <div class="hero__buttons">
-          <button class="button button--primary">ЗАКАЗАТЬ</button>
-          <button class="button button--secondary">ПОДРОБНЕЕ</button>
+          <button type="button" class="button button--primary">ЗАКАЗАТЬ</button>
+          <button type="button" class="button button--secondary">ПОДРОБНЕЕ</button>
         </div>
       </div>
     </section>
@@ -81,7 +83,7 @@
           </div>
         </div>
 
-        <form class="order__form form">
+        <form class="order__form form" action="#" method="post">
           <div class="form__row">
             <select name="system" class="form__select">
               <option>Выберете тип системы</option>
@@ -90,24 +92,38 @@
               <option>Temporibus autem</option>
               <option>Itaque earum rerum</option>
             </select>
-            <input type="email" name="email" placeholder="Ваш e-mail" class="form__input" />
-            <input type="text" name="name" placeholder="Ваше имя" class="form__input" />
+            <input
+              type="email"
+              name="email"
+              placeholder="Ваш e-mail"
+              class="form__input"
+              required
+            />
+            <input
+              type="text"
+              name="name"
+              placeholder="Ваше имя"
+              class="form__input"
+              required
+            />
           </div>
 
           <div class="form__row form__row--file">
             <div>
-            <div class="form__range-title-container">
-            <label for="rangeInput">Sed ut perspiciatis, unde omnis iste natus</label>
-            <div class="form__range-value">75%</div>
-            </div>
-            <input
-              type="range"
-              id="rangeInput"
-              class="form__range"
-              min="0"
-              max="100"
-              value="75"
-            />
+              <div class="form__range-title-container">
+                <label for="rangeInput"
+                  >Sed ut perspiciatis, unde omnis iste natus</label
+                >
+                <div class="form__range-value">75%</div>
+              </div>
+              <input
+                type="range"
+                id="rangeInput"
+                class="form__range"
+                min="0"
+                max="100"
+                value="75"
+              />
             </div>
             <label class="form__file">
               <input type="file" name="file" />
@@ -116,7 +132,9 @@
             </label>
           </div>
 
-          <button type="submit" class="button button--primary form__submit">ОТПРАВИТЬ</button>
+          <button type="submit" class="button button--primary form__submit">
+            ОТПРАВИТЬ
+          </button>
         </form>
       </div>
     </section>
@@ -124,13 +142,40 @@
     <!-- Footer -->
     <footer class="footer">
       <div class="footer__container container">
-        <p class="footer__title">&copy; 2025 LOREMIPSUM.NET. Все права защищены.</p>
+        <p class="footer__title">
+          &copy; 2025 LOREMIPSUM.NET. Все права защищены.
+        </p>
         <div class="footer__links">
-          <div class="footer__links-container"> <div class="footer__links-icon footer__links-icon-qiwi"></div> QIWI wallet</div>
-          <div class="footer__links-container"> <div class="footer__links-icon footer__links-icon-yandex"></div> Yandex Money</div>
-          <div class="footer__links-container"> <div class="footer__links-icon footer__links-icon-web"></div> WebMoney</div>
-          <a href="mailto:info@loremipsum.net"> <div class="footer__links-container"> <div class="footer__links-icon footer__links-icon-mail"> </div>info@loremipsum.net</div></a>
-          <a href="https://vk.com"> <div class="footer__links-container"><div class="footer__links-icon footer__links-icon-vk"></div> Мы вконтакте</div></a>
+          <div class="footer__links-container">
+            <span class="footer__links-icon footer__links-icon-qiwi"></span>
+            QIWI wallet
+          </div>
+          <div class="footer__links-container">
+            <span class="footer__links-icon footer__links-icon-yandex"></span>
+            Yandex Money
+          </div>
+          <div class="footer__links-container">
+            <span class="footer__links-icon footer__links-icon-web"></span>
+            WebMoney
+          </div>
+          <div class="footer__links">
+            <a
+              href="mailto:info@loremipsum.net"
+              class="footer__links-container"
+            >
+              <span class="footer__links-icon footer__links-icon-mail"></span>
+              info@loremipsum.net
+            </a>
+            <a
+              href="https://vk.com"
+              class="footer__links-container"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span class="footer__links-icon footer__links-icon-vk"></span>
+              Мы ВКонтакте
+            </a>
+          </div>
         </div>
       </div>
     </footer>
