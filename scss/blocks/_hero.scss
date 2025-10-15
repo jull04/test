@@ -70,16 +70,12 @@
   }
 
   @include respond(1024px) {
-    padding: 80px 0;
-    text-align: center;
-
-    &__buttons {
-      justify-content: center;
-    }
+    padding: 80px 40px;
   }
 
   @include respond(768px) {
     padding: 60px 0;
+    text-align: center;
 
     &__title {
       font-size: 28px;
@@ -99,7 +95,7 @@
   @include respond(480px) {
     &__title {
       font-size: 22px;
-      margin-bottom: 20px;
+      margin: 0 10px 20px;
     }
 
     &__subtitle {

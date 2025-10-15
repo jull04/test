@@ -26,6 +26,30 @@
   &__nav {
     display: flex;
     gap: 60px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+
+    @include respond(768px) {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 70%;
+      background: $dark;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 30px;
+      transform: translateX(100%);
+      opacity: 0;
+      pointer-events: none;
+      z-index: 1000;
+
+      &--active {
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
   }
 
   &__link {
@@ -41,17 +65,53 @@
     }
   }
 
+  /* === Бургер === */
+  &__burger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 29px;
+    height: 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 1100;
+
+    span {
+      display: block;
+      height: 3px;
+      width: 100%;
+      background: $light;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    }
+
+    &.active {
+      span:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+      }
+      span:nth-child(2) {
+        opacity: 0;
+      }
+      span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
+      }
+    }
+
+    @include respond(768px) {
+      display: flex;
+    }
+  }
+
+  /* === Мобильная адаптация === */
   @include respond(768px) {
     padding: 20px;
 
     &__container {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 8px;
+      justify-content: space-between;
     }
 
     &__nav {
-      flex-wrap: wrap;
       gap: 12px;
     }
 
