@@ -97,10 +97,17 @@
           <div class="form__row form__row--file">
             <div>
             <div class="form__range-title-container">
-            <label>Sed ut perspiciatis, unde omnis iste natus</label>
-            <div>75%</div>
+            <label for="rangeInput">Sed ut perspiciatis, unde omnis iste natus</label>
+            <div class="form__range-value">75%</div>
             </div>
-            <input type="range" class="form__range" />
+            <input
+              type="range"
+              id="rangeInput"
+              class="form__range"
+              min="0"
+              max="100"
+              value="75"
+            />
             </div>
             <label class="form__file">
               <input type="file" name="file" />

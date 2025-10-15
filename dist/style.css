@@ -231,7 +231,6 @@
 .order__steps {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-bottom: 80px;
   gap: 20px;
 }
@@ -396,11 +395,8 @@
   .order__steps .step {
     flex: 1 1 45%;
   }
-  .order__steps .step::after {
-    display: none;
-  }
   .order .form__range {
-    width: 500px;
+    width: 350px;
   }
   .order .form__input {
     width: auto;
@@ -420,6 +416,9 @@
   .order__steps .step {
     flex: 1 1 auto;
     max-width: 250px;
+  }
+  .order__steps .step::after {
+    display: none;
   }
   .order .form__row {
     flex-direction: column;
